@@ -11,7 +11,7 @@ public class MenuListActivity extends ListActivity {
 	
   public void onCreate(Bundle icicle) {
     super.onCreate(icicle);
-    String[] values = new String[] { "Vedi messaggi", "iPhone", "WindowsMobile",
+    String[] values = new String[] { "Vedi messaggi", "Setta", "WindowsMobile",
         "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
         "Linux", "OS/2" };
     // use your custom layout
