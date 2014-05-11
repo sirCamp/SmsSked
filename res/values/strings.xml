@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmsSked</string>
+    <string name="action_settings">Inpostazioni</string>
+    <string name="exit">Esci</string>
+    <string name="exit_service">Disattiva Servizi</string>
+    <string name="start_service">Attiva Servizi</string>
+    <string name="destinatario">Inserisci il numero destinatario:</string>
+    <string name="testo_sms">Inserisci il testo del messaggio:</string>
+    <string name="set_sms">Imposta Invio</string>
+    <string name="show_sms">Mostra Pianificati</string>
+    <string name="set_date">Pianifica SMS</string>
+    <string name="select_hour">Seleziona ora invio</string>
+    <string name="select_date">Seleziona data invio</string>
+    <string name="day">Giorno</string>
+    <string name="month">Mese</string>
+    <string name="hour">Ore</string>
+    <string name="min">Minuti</string>
+    <string name="dest">Destinatario</string>
+    <string name="sms">Testo</string>
+    <string name="service_name">SkedService</string>
+    <string name="local_service_started">SkedService</string>
+    <string name="first">Elimina</string>
+    <string name="second">Modifica</string>
+    <string name="third">Esci</string>
+
+
+</resources>

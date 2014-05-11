@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="clr_btn_press">#ffff5969</color>
+    <color name="clr_btn_press2">#ffffa8b0</color>
+    <color name="clr_border_btn">#ff742521</color>
+    <color name="clr_border_btn2">#ff3b1912</color>
+    <color name="clr_btn1">#ffffebe7</color>
+    <color name="clr_btn2">#ffff8c87</color>
+    <color name="clr_notify_btn1">#ffff8c87</color>
+    <color name="clr_notify_btn2">#ff910033</color>
+    <color name="clr_app_theme">#ffc94356</color>
+    <color name="white_clr">#ffffffff</color>
+</resources>

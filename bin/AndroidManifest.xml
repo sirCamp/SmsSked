@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smssked"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_SMS"/>
+	<uses-permission android:name="android.permission.READ_SMS"/>
+	<uses-permission android:name="android.permission.SEND_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"/>
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	
+	
+    
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+
+
+    <application
+    
+
+    
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.smssked.MenuListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.google.ads.AdActivity"
+    			  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+        <activity android:name="com.example.smssked.TimeActivity"
+                  android:label="@string/app_name">
+        <intent-filter/>
+        </activity>
+        
+        <activity android:name="com.example.smssked.PrintActivity"
+                  android:label="@string/app_name">
+        <intent-filter/>
+        </activity>
+        
+
+        <receiver
+	       android:name="com.example.smssked.receiver.BootReceiver"
+	       android:enabled="true"
+	       android:exported="false" >
+	       <intent-filter>
+	          <action android:name="android.intent.action.BOOT_COMPLETED" />
+  
+	       </intent-filter>
+		</receiver>
+		
+        <service
+  			android:name="com.example.smssked.service.SkedService"
+			android:exported="false"
+			android:enabled="true">
+
+        </service>
+        
+        
+        
+	<meta-data android:name="ADMOB_PUBLISHER_ID" android:value="ca-app-pub-8318354277210047/6418625015" />
+	<meta-data android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" android:value="true" />
+    </application>
+    
+
+</manifest>
