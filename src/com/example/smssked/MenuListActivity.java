@@ -1,5 +1,7 @@
 package com.example.smssked;
 
+import com.example.smssked.model.ItemListActivity;
+
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,13 +10,15 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MenuListActivity extends ListActivity {
+
+  private ItemListActivity menu;
+  private ArrayAdapter<String> adapter;
 	
   public void onCreate(Bundle icicle) {
     super.onCreate(icicle);
-    String[] values = new String[] { "Vedi messaggi impostati", "Setta messaggio","Vedi mail impostate", "Setta mail" };
-    // use your custom layout
-    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-        R.layout.rowlayout, R.id.label, values);
+   
+    menu = new ItemListActivity();
+    adapter = new ArrayAdapter<String>(this,R.layout.rowlayout, R.id.label, menu.getItems());
     setListAdapter(adapter);
   }
 
