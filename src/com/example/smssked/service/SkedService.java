@@ -19,7 +19,7 @@ import android.widget.Toast;
 public class SkedService extends Service{
 	 private  static  String TAG = "[SkedSms]: " ;
 	 private static String VOICE="Controllo SMS da inviare";
-	 private static String VOICE_END="SkedService è stato terminato";
+	 private static String VOICE_END="SkedService e' stato terminato";
 	 public String name;
 	 private Intent myIntent;
 	 public PendingIntent pendingIntent;
@@ -92,7 +92,7 @@ public class SkedService extends Service{
         super.onDestroy();
         Log.d (TAG, VOICE_END );
  
-        Toast.makeText(this, "Il servizio è stato disabilitato", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Il servizio e' stato disabilitato", Toast.LENGTH_LONG).show();
         alarmManager.cancel(pendingIntent);
     }
 }
